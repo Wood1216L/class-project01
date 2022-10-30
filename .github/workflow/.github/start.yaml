@@ -1,0 +1,22 @@
+name: CLASS JOBS
+
+on: push
+
+jobs:
+    starter:
+    run-on: ubuntu-latest
+    steps:
+      -name: print date
+      run: date                     
+    job2:
+      starter:
+      run-on: mac0S-latest
+      steps:
+         -name: print date
+         run: date 
+      job3:
+        starter:  
+        run-on: Windows
+        steps:
+          -name: print date
+          run: date
